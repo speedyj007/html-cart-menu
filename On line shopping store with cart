@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang = "us-en">
+<title>On line shopping store with cart</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="w3.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+<style>
+
+.b1{
+border:none;
+background-color:skyblue ;
+font-family:Schadow BT;
+font-size:25px;
+color:black;
+padding:5px 15px;
+border-radius:10px;
+}
+
+.w3-select{
+font-family:Schadow BT;
+font-size:18px;
+width:22%;
+}
+
+.b1:hover{
+color:blue;
+background-color:yellow;
+}
+
+h1{
+font-family:Schadow BT;
+}
+
+ hr{
+border-color:blue;
+	box-shadow: 5px 2px 10px blue;
+}
+
+img{
+background-repeat:no-repeat;
+width:250px;
+hright:350px;
+
+}
+
+.l2{
+color:red;
+font-size:30px;
+}
+</style>
+
+</head>
+
+
+<body>
+<div class = "w3-container">
+
+<div class = "w3-row">
+<div class = "w3-half">
+<h1>On Line Shopping Store</h1></div>
+
+
+<div class = "w3-half">
+<i class="w3-padding w3-display-topright fa fa-cart-plus" style="font-size:50px;color:black"><label id = "cartUpdate" class = "l2 w3-display-topright ">0</label></i></div>
+</div>
+<hr>
+
+<div class = "w3-row w3-center">
+
+
+<div class = "w3-third">
+<img src = "Image\\nokia cart 1.jpg" ><br><br>
+<select class = "w3-select w3-border" name = "option" id = "select1" >
+<option value = "" disabled selected>Quantity</option>
+<option value = "1">1</option>
+<option value = "2">2</option>
+<option value = "3">3</option>
+<option value = "4">4</option>
+<option value = "5">5</option>
+<option value = "6">6</option>
+</select>
+<button class = "b1" onclick = "cart()">Add Item</button>
+</div>
+
+
+<div class = "w3-third">
+<img src = "Image\\nokia cart 3.jpg"><br><br>
+<select class = "w3-select w3-border" name = "option" id = "select2">
+<option value = "" disabled selected>Quantity</option>
+<option value = "1">1</option>
+<option value = "2">2</option>
+<option value = "3">3</option>
+<option value = "4">4</option>
+<option value = "5">5</option>
+<option value = "6">6</option>
+</select>
+<button class = "b1" onclick = "cart2()">Add Item</button>
+</div>
+
+
+<div class = "w3-third">
+<img src = "Image\\samsung cart 2.jpg"><br><br>
+<button class = "b1" onclick = "cart3()">Add Item</button>
+<select class = "w3-select w3-border" name = "option" id = "select3">
+<option value = "" disabled selected>Quantity</option>
+<option value = "1">1</option>
+<option value = "2">2</option>
+<option value = "3">3</option>
+<option value = "4">4</option>
+<option value = "5">5</option>
+<option value = "6">6</option>
+</select>
+</div>
+
+</div>
+
+<hr>
+
+</div>
+<script>
+
+function cart()
+{
+var x = document.getElementById("select1").selectedIndex;
+var y = document.getElementById("select2").selectedIndex;
+var z = document.getElementById("select3").selectedIndex;
+document.getElementById("cartUpdate").innerHTML = x+y+z;
+
+}
+
+</script>
+
+<script>
+function cart2()
+{
+var x = document.getElementById("select1").selectedIndex;
+var y = document.getElementById("select2").selectedIndex;
+var z = document.getElementById("select3").selectedIndex;
+document.getElementById("cartUpdate").innerHTML = y+x;
+
+}
+</script>
+
+
+<script>
+
+function cart3()
+{
+var x = document.getElementById("select1").selectedIndex;
+var y = document.getElementById("select2").selectedIndex;
+var z = document.getElementById("select3").selectedIndex;
+document.getElementById("cartUpdate").innerHTML = x+y+z;
+
+}
+
+</script>
+</body>
+</html>
